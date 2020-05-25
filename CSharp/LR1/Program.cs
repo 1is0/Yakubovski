@@ -40,7 +40,7 @@ namespace Game2048
                         Input = 0;
                         break;
                 }
-                if (Input == 0) break;
+                if (Input == 0) continue;
                 GenerateNum(array, size);
                 Show(array, size);
                 refresh(array, size);
