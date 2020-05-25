@@ -1,0 +1,19 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "Node.h"
+
+std::string GetData() {
+	return data;
+}
+
+void SetData(std::string data) {
+	this->data = data;
+}
+
+Node(std::string data) {
+	this->data = data;
+}
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)

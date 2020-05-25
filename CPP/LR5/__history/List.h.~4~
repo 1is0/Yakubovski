@@ -1,0 +1,12 @@
+// ---------------------------------------------------------------------------
+
+#ifndef ListH
+#define ListH
+#include "Queue.h"
+
+class List : public Queue {
+	void PushBack(std::string data);
+	void PopFront();
+};
+// ---------------------------------------------------------------------------
+#endif

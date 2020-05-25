@@ -1,0 +1,23 @@
+// ---------------------------------------------------------------------------
+
+#ifndef ListH
+#define ListH
+#include "Node.h"
+
+class List {
+private:
+	int size = 0;
+
+public:
+	Node* head;
+
+	int GetSize() {
+		return size;
+	}
+
+	void SetSize(int Size) {
+		size = Size;
+	}
+};
+// ---------------------------------------------------------------------------
+#endif

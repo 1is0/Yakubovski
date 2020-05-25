@@ -1,0 +1,36 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "Queue.h"
+
+void Queue::PushFront(std::string data) {
+	Node* toAdd = new Node(data);
+	if (head == NULL) {
+		head = toAdd;
+		tail = toAdd;
+	}
+	else {
+		head->pPrev = toAdd;
+		toAdd->pNext = head;
+		head = toAdd;
+	}
+}
+
+void Queue::PopBack() {
+
+}
+
+std::string Queue::GetFront() {
+
+}
+
+std::string Queue::GetBack() {
+	return head == NULL ? NULL : head.data;
+}
+
+bool Queue::Empty() {
+	return head == NULL;
+}
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)

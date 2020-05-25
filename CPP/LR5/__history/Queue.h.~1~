@@ -1,0 +1,17 @@
+// ---------------------------------------------------------------------------
+
+#ifndef QueueH
+#define QueueH
+
+class Queue {
+public:
+	head = NULL;
+	tail = NULL;
+	void PushFront(string data);
+	void PopBack();
+	void GetFront();
+	void GetBack();
+	void Empty();
+};
+// ---------------------------------------------------------------------------
+#endif

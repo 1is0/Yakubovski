@@ -1,0 +1,49 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+#include "Calculator.h"
+#include "Stack.h"
+
+int Calculator::Priority(char c) {
+	if (c == '*' || c == '/') {
+		return 3;
+	}
+	if (c == '+' || c == '-') {
+		return 2;
+	}
+	if (c == '(') {
+		return 1;
+	}
+}
+
+bool Calculator::IsOperation(char c) {
+	return (c == '*' || c == '/' || c == '+' || c == '-' || c == '(' ||
+		c == ')');
+}
+
+std::string Calculator::TransformIntoRPE(std::string input) {
+	std::string output = "";
+	Stack<char>OperationsStack;
+	for (int i = 0; i < input.length(); i++) {
+		if (isalpha(input[i])) {
+			output += input[i];
+		}
+		else if (IsOperation(input[i])) {
+			if (OperationsStack.empty() || (Priority(OperationsStack.top()) <
+				Priority(input[i])) || input[i] == '(') {
+				OperationsStack.push(input[i]);
+			}
+			else if (input[i] == ')') {
+				while (OperationsStack.top() != '(') {
+					output += OperationsStack.top();
+					OperationsStack.pop();
+				}
+				OperationsStack.pop();
+
+			}
+		}
+	}
+	return output;
+}
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)

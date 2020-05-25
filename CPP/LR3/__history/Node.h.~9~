@@ -1,0 +1,31 @@
+// ---------------------------------------------------------------------------
+
+#ifndef NodeH
+#define NodeH
+#include <string.h>
+
+class Node {
+	int serialNumber;
+	string surname;
+	string name;
+	string patronymic;
+	string homeAddress;
+	string registrationDate;
+	bool isCompleted = false;
+	Node *pNext;
+	Node();
+	Node(int SerialNumber,string Surname,string Name,string Patronymic,string HomeAddress,string RegistrationDate);
+
+	int GetSerialNumber(return serialNumber);
+	string GetSerialNumber(return surname);
+	string GetSerialNumber(return name);
+	string GetSerialNumber(return patronymic);
+	string GetSerialNumber(return homeAddress);
+	string GetSerialNumber(return registrationDate);
+	bool GetSerialNumber(return isCompleted);
+
+
+
+};
+// ---------------------------------------------------------------------------
+#endif

@@ -1,0 +1,18 @@
+// ---------------------------------------------------------------------------
+
+#ifndef QueueH
+#define QueueH
+#include <string>
+
+class Queue {
+public:
+	Node* head = NULL;
+	Node* tail = NULL;
+	void PushFront(std::string data);
+	void PopBack();
+	void GetFront();
+	void GetBack();
+	void Empty();
+};
+// ---------------------------------------------------------------------------
+#endif

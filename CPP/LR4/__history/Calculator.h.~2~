@@ -1,0 +1,14 @@
+// ---------------------------------------------------------------------------
+#ifndef CalculatorH
+#define CalculatorH
+#include <iostream>
+
+class Calculator {
+public:
+	std::string TransformIntoRPE(std::string input);
+	int Priority(char c);
+    bool IsOperation(char c);
+};
+
+// ---------------------------------------------------------------------------
+#endif

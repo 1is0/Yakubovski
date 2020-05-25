@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.577,C:\Users\user\Yakubovski\CPP\LR5\List.h=C:\Users\user\Yakubovski\CPP\LR5\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.413,C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\user\Yakubovski\CPP\LR5\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.051,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.903,=C:\Users\user\Yakubovski\CPP\LR5\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.066,C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\user\Yakubovski\CPP\LR5\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.413,C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\user\Yakubovski\CPP\LR5\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.699,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.038,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.960,C:\Users\user\Yakubovski\CPP\LR5\Unit2.h=C:\Users\user\Yakubovski\CPP\LR5\Node.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.733,C:\Users\user\Yakubovski\CPP\LR5\Unit2.h=C:\Users\user\Yakubovski\CPP\LR5\Queue.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.655,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.773,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.961,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.686,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.443,C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\user\Yakubovski\CPP\LR5\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.953,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.577,C:\Users\user\Yakubovski\CPP\LR5\List.cpp=C:\Users\user\Yakubovski\CPP\LR5\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.237,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.558,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.852,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.733,C:\Users\user\Yakubovski\CPP\LR5\Unit2.cpp=C:\Users\user\Yakubovski\CPP\LR5\Queue.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.857,=C:\Users\user\Yakubovski\CPP\LR5\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.463,=C:\Users\user\Yakubovski\CPP\LR5\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.653,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.413,C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\user\Yakubovski\CPP\LR5\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.960,C:\Users\user\Yakubovski\CPP\LR5\Unit2.cpp=C:\Users\user\Yakubovski\CPP\LR5\Node.cpp</Transaction>
+  </Transactions>
+</BorlandProject>
