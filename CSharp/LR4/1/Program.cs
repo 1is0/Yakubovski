@@ -40,37 +40,30 @@ namespace LR4_1
             {
                 if (WinAPIImport.Process32First(snap, ref pe))
                 {
-                    //ProcessesTreeView.Nodes.Clear();
                     Console.Clear();
                     do
                     {
                         anotherProc = Process.GetProcessById((int)pe.th32ProcessID);
-                        //TreeNode tmp = ProcessesTreeView.Nodes.Add($"ID: {anotherProc.Id} Name: {anotherProc.ProcessName}");
-                        //tmp.Nodes.Add($"Memory size allocated for process: {anotherProc.VirtualMemorySize64} bytes");
                         Console.WriteLine($"ID: {anotherProc.Id} Name: {anotherProc.ProcessName}");
                         Console.WriteLine($"Memory size allocated for process: {anotherProc.VirtualMemorySize64} bytes");
                     } while (WinAPIImport.Process32Next(snap, ref pe));
                 }
                 else
                 {
-                    //MessageBox.Show("Unable to get any process!");
                     Console.WriteLine("Unable to get any process!");
                 }
 
             }
             catch (System.ComponentModel.Win32Exception)
             {
-                //MessageBox.Show("Something went wrong, try again please (:");
                 Console.WriteLine("Something went wrong, try again please.");
             }
             catch (System.ArgumentException)
             {
-                //MessageBox.Show("Some process has just terminated in runtime, please try again.");
                 Console.WriteLine("Some process has just terminated in runtime, please try again.");
             }
             finally
             {
-                // Must clean up the snapshot object!
                 WinAPIImport.CloseHandle(snap);
             }
         }
