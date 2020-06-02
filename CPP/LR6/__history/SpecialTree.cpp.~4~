@@ -1,0 +1,11 @@
+// ---------------------------------------------------------------------------
+
+#pragma hdrstop
+
+#include "SpecialTree.h"
+
+int SpecialTree::CountNodesInTree(Node* tmp) {
+
+}
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)

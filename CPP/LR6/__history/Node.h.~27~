@@ -1,0 +1,39 @@
+// ---------------------------------------------------------------------------
+
+#ifndef NodeH
+#define NodeH
+
+// ---------------------------------------------------------------------------
+class Node {
+private:
+	UnicodeString surname;
+	int hours;
+
+public:
+	Node(UnicodeString surname, int hours) {
+		this->surname = surname;
+		this->hours = hours;
+		pLeft = NULL;
+		pRight = NULL;
+	}
+
+	Node *pLeft;
+	Node *pRight;
+
+	UnicodeString GetSurname() {
+		return surname;
+	}
+
+	void SetSurname(UnicodeString surname) {
+		this->surname = surname;
+	}
+
+	int GetHours() {
+		return hours;
+	}
+
+	void SetHours(int hours) {
+		this->hours = hours;
+	}
+};
+#endif

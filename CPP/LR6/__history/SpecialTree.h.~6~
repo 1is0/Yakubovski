@@ -1,0 +1,12 @@
+// ---------------------------------------------------------------------------
+
+#ifndef SpecialTreeH
+#define SpecialTreeH
+#include "Tree.h"
+
+class SpecialTree : Tree {
+public:
+    void CountNodesInTree();
+};
+// ---------------------------------------------------------------------------
+#endif

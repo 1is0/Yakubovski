@@ -1,0 +1,128 @@
+// ---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+#include "Tree.h"
+// ---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+Tree tr;
+
+void FillTable(TStringGrid *StringGrid1);
+void FillTreeFromTable(TStringGrid *StringGrid1, TMemo* Memo1);
+
+// ---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner) : TForm(Owner) {
+	FillTable(StringGrid1);
+	FillTreeFromTable(StringGrid1, Memo1);
+	tr.PrintTree(TreeView1);
+
+}
+// ---------------------------------------------------------------------------
+
+void FillTable(TStringGrid *StringGrid1) {
+	StringGrid1->Cells[0][0] = "Id:";
+	StringGrid1->Cells[1][0] = "Фамилия:";
+	StringGrid1->Cells[0][1] = "1001";
+	StringGrid1->Cells[1][1] = "Буланова";
+	StringGrid1->Cells[0][2] = "1678";
+	StringGrid1->Cells[1][2] = "Кашин";
+	StringGrid1->Cells[0][3] = "1010";
+	StringGrid1->Cells[1][3] = "Якубовский";
+	StringGrid1->Cells[0][4] = "1021";
+	StringGrid1->Cells[1][4] = "Осмоловский";
+	StringGrid1->Cells[0][5] = "1777";
+	StringGrid1->Cells[1][5] = "Пашук";
+	StringGrid1->Cells[0][6] = "1189";
+	StringGrid1->Cells[1][6] = "Воробьев";
+	StringGrid1->Cells[0][7] = "1034";
+	StringGrid1->Cells[1][7] = "Суриков";
+	StringGrid1->Cells[0][8] = "1676";
+	StringGrid1->Cells[1][8] = "Беспалов";
+	StringGrid1->Cells[0][9] = "1256";
+	StringGrid1->Cells[1][9] = "Хацкевич";
+	StringGrid1->Cells[0][10] = "1315";
+	StringGrid1->Cells[1][10] = "Шкадаревич";
+	StringGrid1->Cells[0][11] = "1589";
+	StringGrid1->Cells[1][11] = "Анисимов";
+}
+
+void FillTreeFromTable(TStringGrid* StringGrid1, TMemo* Memo1) {
+	int size = StringGrid1->RowCount - 1;
+	int* idArray = new int[size];
+	UnicodeString* surnameArray = new UnicodeString[size];
+	for (int i = 1; i < StringGrid1->RowCount; i++) {
+		idArray[i - 1] = StrToInt(StringGrid1->Cells[0][i]);
+		surnameArray[i - 1] = StringGrid1->Cells[1][i];
+	}
+	for (int i = 0; i < size; i++) {
+		for (int j = 0; j < size; j++) {
+
+		}
+	}
+
+	// ------------
+	for (int i = 0; i < size - 1; i++) {
+		for (int j = (size - 1); j > i; j--) {
+			if (idArray[j - 1] > idArray[j]) {
+				int tempID = idArray[j - 1];
+				UnicodeString tempSurname = surnameArray[j - 1];
+
+				idArray[j - 1] = idArray[j];
+				surnameArray[j - 1] = surnameArray[j];
+
+				idArray[j] = tempID;
+				surnameArray[j] = tempSurname;
+			}
+		}
+	}
+	for (int i = 0; i < size; i++) {
+		Memo1->Lines->Add(IntToStr(idArray[i]));
+		Memo1->Lines->Add(surnameArray[i]);
+	}
+	tr.CreateTreeFromArray(tr.root, idArray, surnameArray, 0, size);
+}
+
+void __fastcall TForm1::Button1Click(TObject *Sender) {
+	tr.AddNode(tr.root, StrToInt(Edit1->Text), Edit2->Text);
+	tr.PrintTree(TreeView1);
+}
+// ---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button2Click(TObject *Sender) {
+	Node* forSearch = tr.SearchByKey(tr.root, StrToInt(Edit3->Text));
+	if (forSearch == NULL)
+		ShowMessage("Узел с таким ключом отсутствует");
+	else
+		ShowMessage("Результат поиска:\nId: " + IntToStr(forSearch->GetID()) +
+		"\nФамилия: " + forSearch->GetSurname());
+}
+// ---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button3Click(TObject *Sender) {
+	tr.DeleteNode(StrToInt(Edit3->Text));
+	tr.PrintTree(TreeView1);
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::Button4Click(TObject *Sender) {
+	Memo1->Clear();
+	tr.DirectBypass(Memo1, tr.root);
+
+}
+// ---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button5Click(TObject *Sender) {
+	Memo1->Clear();
+	tr.BackwardBypass(Memo1, tr.root);
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::Button6Click(TObject *Sender) {
+	Memo1->Clear();
+	tr.KeyBypass(Memo1, tr.root);
+}
+// ---------------------------------------------------------------------------
