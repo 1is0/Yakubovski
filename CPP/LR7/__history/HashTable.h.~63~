@@ -1,0 +1,49 @@
+// ---------------------------------------------------------------------------
+
+#ifndef HashTableH
+#define HashTableH
+#include "Stack.h"
+
+class HashTable {
+private:
+	Stack** hashArray;
+	int size;
+
+	int HashFunc(int key);
+
+public:
+	HashTable(int size);
+	void Print(TMemo* Memo1);
+	void Add(int key, UnicodeString name);
+	void Delete(int key, UnicodeString name);
+};
+
+HashTable::HashTable(int size) {
+	this->size = size;
+	hashArray = new Stack*[size];
+	for (int i = 0; i < size; i++) {
+		hashArray[i] = new Stack();
+	}
+}
+
+void HashTable::Print(TMemo* Memo1) {
+	Memo1->Clear();
+	for (int i = 0; i < size; i++) {
+		Memo1->Lines->Add("----------------------------");
+		Memo1->Lines->Add(IntToStr(i + 1) + "-й Стек");
+		hashArray[i]->PrintStack(Memo1);
+	}
+}
+
+int HashTable::HashFunc(int key) {
+	return key % size;
+}
+
+void HashTable::Add(int key, UnicodeString name) {
+	int index = HashFunc(key);
+	hashArray[index]->push(key, name);
+}
+
+void HashTable::Delete(int key, UnicodeString name)
+	// ---------------------------------------------------------------------------
+#endif

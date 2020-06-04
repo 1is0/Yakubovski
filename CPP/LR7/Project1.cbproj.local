@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020.06.04 17:19:21.697,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020.06.04 17:19:22.635,=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020.06.04 17:22:34.755,C:\Users\user\Yakubovski\CPP\LR7\Unit1.cpp=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020.06.04 17:22:34.756,C:\Users\user\Yakubovski\CPP\LR7\Unit1.h=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2020.06.04 17:22:34.756,C:\Users\user\Yakubovski\CPP\LR7\Unit1.dfm=C:\Users\user\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020.06.04 17:22:37.693,C:\Users\user\Yakubovski\CPP\LR7\Project1PCH1.h=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020.06.04 17:22:39.579,C:\Users\user\Yakubovski\CPP\LR7\Project1.cbproj=C:\Users\user\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2020.06.04 17:27:05.112,=C:\Users\user\Yakubovski\CPP\LR7\Unit2.cpp</Transaction>
+    <Transaction>2020.06.04 17:27:21.176,C:\Users\user\Yakubovski\CPP\LR7\Stack.h=C:\Users\user\Yakubovski\CPP\LR7\Unit2.h</Transaction>
+    <Transaction>2020.06.04 17:27:21.176,C:\Users\user\Yakubovski\CPP\LR7\Stack.cpp=C:\Users\user\Yakubovski\CPP\LR7\Unit2.cpp</Transaction>
+    <Transaction>2020.06.04 17:28:52.121,=C:\Users\user\Yakubovski\CPP\LR7\Unit2.cpp</Transaction>
+    <Transaction>2020.06.04 17:28:59.034,C:\Users\user\Yakubovski\CPP\LR7\Node.h=C:\Users\user\Yakubovski\CPP\LR7\Unit2.h</Transaction>
+    <Transaction>2020.06.04 17:28:59.034,C:\Users\user\Yakubovski\CPP\LR7\Node.cpp=C:\Users\user\Yakubovski\CPP\LR7\Unit2.cpp</Transaction>
+    <Transaction>2020.06.04 17:57:25.387,=C:\Users\user\Yakubovski\CPP\LR7\Unit2.cpp</Transaction>
+    <Transaction>2020.06.04 17:57:37.348,C:\Users\user\Yakubovski\CPP\LR7\HashTable.cpp=C:\Users\user\Yakubovski\CPP\LR7\Unit2.cpp</Transaction>
+    <Transaction>2020.06.04 17:57:37.348,C:\Users\user\Yakubovski\CPP\LR7\HashTable.h=C:\Users\user\Yakubovski\CPP\LR7\Unit2.h</Transaction>
+  </Transactions>
+</BorlandProject>

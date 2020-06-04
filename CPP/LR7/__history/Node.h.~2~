@@ -1,0 +1,28 @@
+// ---------------------------------------------------------------------------
+
+#ifndef NodeH
+#define NodeH
+
+class Node {
+private:
+	int key;
+    UnicodeString name;
+
+public:
+	Node* pNext = 0;
+
+	T GetData() {
+		return data;
+	}
+
+	void SetData(T data) {
+		this->data = data;
+	}
+
+	Node(T data) {
+		this->data = data;
+	}
+};
+// ---------------------------------------------------------------------------
+#endif
+
