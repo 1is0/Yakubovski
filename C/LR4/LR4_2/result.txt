@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+INT sum(INT x, INT y)
+{
+	RETURN x+y;
+}
+
+INT main()
+{
+	INT num1 = 3;
+	INT num2 = 7;
+	printf("%dsum(3,7) == ", sum(3,7));
+	FOR(INT i = 0; i < 10; i++)
+		printf("%d",i);
+	RETURN 0;	
+}
